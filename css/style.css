@@ -14,3 +14,15 @@ top:calc(50% - 1rem);
 left:calc(50% - 1rem);
 }
 .skull img{width: 100%;}
+
+.message{
+  background: blue;
+  color:white;
+position: absolute;
+top:calc(50% + 4em);
+left:calc(50% - 3em);
+
+}
+.message p{
+  text-transform: capitalize;
+}
