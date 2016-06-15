@@ -26,3 +26,14 @@ left:calc(50% - 3em);
 .message p{
   text-transform: capitalize;
 }
+.message p span{color:red;}
+
+.guns{
+  background: red;
+  position: absolute;
+  bottom:1rem;
+  right:1rem;
+}
+.powerups , .gun__icon{
+  display: inline-block;
+}
