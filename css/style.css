@@ -47,3 +47,12 @@ left: 1rem;
 
 }
 .health p{  font-size: 3rem;}
+
+.power-circle{
+  background: red;
+  position: absolute;
+  top:calc(70% + 1rem);
+  left:calc(50% - 1rem);
+
+
+}
