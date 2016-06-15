@@ -37,3 +37,13 @@ left:calc(50% - 3em);
 .powerups , .gun__icon{
   display: inline-block;
 }
+
+.health{
+
+background: red;
+position: absolute;
+bottom:1rem;
+left: 1rem;
+
+}
+.health p{  font-size: 3rem;}
