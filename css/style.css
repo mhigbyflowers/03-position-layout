@@ -10,7 +10,7 @@ display: inline-block;
 position: absolute;
 width: 5rem;
 height: 5rem;
-top:calc(50% - 1rem);
+top:calc(45% - 1rem);
 left:calc(50% - 1rem);
 }
 .skull img{width: 100%;}
@@ -33,10 +33,16 @@ left:calc(50% - 3em);
   position: absolute;
   bottom:1rem;
   right:1rem;
+  transform: rotate(5deg);
 }
+.guns *{border: black 1px solid;}
 .powerups , .gun__icon{
   display: inline-block;
+  float: left;
 }
+.powerups img{ width: 45%;}
+
+.gun__icon img{width: 55%;}
 
 .health{
 
@@ -47,6 +53,15 @@ left: 1rem;
 
 }
 .health p{  font-size: 3rem;}
+
+.health p, .health img{
+  display: inline-block;
+  float: left;
+}
+.health p{
+  transform: rotate(-5deg);
+
+}
 
 .power-circle{
   background: red;
