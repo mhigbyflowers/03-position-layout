@@ -4,3 +4,13 @@
 }
 body{margin: 0;
 background: #666;}
+.skull {
+background: blue;
+display: inline-block;
+position: absolute;
+width: 5rem;
+height: 5rem;
+top:calc(50% - 1rem);
+left:calc(50% - 1rem);
+}
+.skull img{width: 100%;}
