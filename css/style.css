@@ -1,5 +1,134 @@
 *{
   box-sizing: border-box;
-  font-size: 20rem;
+  font-size: 1rem;
+
 }
-body{margin: 0;}
+body{margin: 0;
+background: #666;
+background: url(../img/room.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+.skull {
+/*background: blue;*/
+display: inline-block;
+position: fixed;;
+width: 5rem;
+height: 5rem;
+top:calc(45% - 1rem);
+left:calc(50% - 1rem);
+}
+.skull img{width: 100%;}
+
+.message{
+  /*background: blue;*/
+  color:white;
+position: absolute;
+top:50%;
+left:50%;
+font-family: 'Rubik Mono One', sans-serif;
+transform:translate(-40%,50%);
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+
+
+}
+.message p{
+  text-transform:uppercase;
+font-style: italic;
+}
+.message p span{
+  color:red;
+}
+
+.guns{
+
+  position: fixed;
+  bottom:-8rem;
+  right:1rem;
+  transform: rotate(5deg);
+}
+
+.guns img{
+  float: right
+
+}
+
+.powerups , .gun__icon{
+
+  float: left;
+
+}
+.powerups img{ width: 35%;}
+
+.gun__icon img{width: 100%;
+position: relative;
+top:-4.5rem;}
+
+.powerups img{
+  background: rgba(167,167,167,.42);
+  border-radius: 1rem;
+
+}
+
+.ammo{
+  position: absolute;;
+  bottom:15rem;
+  right:1rem;
+color: white;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+.ammo p span{
+font-size: 2rem;
+}
+.health{
+
+
+position: fixed;
+bottom:2rem;
+left: 1rem;
+width: 30em;
+transform: rotate(-5deg);
+
+}
+.health img{display: inline-block;
+width: 30%;}
+.health p span{  font-size: 2rem;}
+
+.health p, .health img{
+
+  float: left;
+}
+
+.health p{ color: white;
+
+}
+
+.health-bar{
+
+overflow: auto;
+width: 20rem;
+  height: 3rem;
+  -webkit-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
+  -moz-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
+  box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
+border-bottom: .2rem gray solid;
+padding: 0 1rem 1rem 0;;
+}
+.health-bar .tick{
+  background:white;
+  width:calc(80% / 16);
+  display: inline-block;
+  height: 100%;
+  float: left;
+  border: rgba(0,0,0,.52) solid 1px;
+  border-radius: .2rem;
+  opacity: .6;
+
+}
+.health-bar .yellow {
+  background: yellow;
+    /*border: black solid 1px;*/
+    width: calc(20% / 4);
+    float: right;
+}
