@@ -3,9 +3,11 @@
   font-size: 1rem;
 }
 body{margin: 0;
-background: #666;}
+background: #666;
+background: url(http://cdn.home-designing.com/wp-content/uploads/2009/10/white-and-black-room.jpg);
+background-size: 100%;}
 .skull {
-background: blue;
+/*background: blue;*/
 display: inline-block;
 position: absolute;
 width: 5rem;
@@ -16,7 +18,7 @@ left:calc(50% - 1rem);
 .skull img{width: 100%;}
 
 .message{
-  background: blue;
+  /*background: blue;*/
   color:white;
 position: absolute;
 top:calc(50% + 4em);
@@ -24,21 +26,28 @@ left:calc(50% - 3em);
 
 }
 .message p{
-  text-transform: capitalize;
+  text-transform:uppercase;
+font-style: italic;
 }
-.message p span{color:red;}
+.message p span{
+  color:red;
+}
 
 .guns{
-  background: red;
+
   position: absolute;
   bottom:1rem;
   right:1rem;
   transform: rotate(5deg);
 }
-.guns *{border: black 1px solid;}
+.guns *{
+
+  /*border: black 1px solid;*/
+}
 .powerups , .gun__icon{
   display: inline-block;
   float: left;
+    background: rgba(96,95,95,.45);
 }
 .powerups img{ width: 45%;}
 
@@ -46,7 +55,7 @@ left:calc(50% - 3em);
 
 .health{
 
-background: red;
+/*background: red;*/
 position: absolute;
 bottom:1rem;
 left: 1rem;
@@ -63,8 +72,36 @@ left: 1rem;
 
 }
 
+.health-bar{
+
+  width: 20rem;
+  height: 3rem;
+  -webkit-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
+  -moz-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
+  box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
+border-bottom: .1rem gray solid;
+padding: 0 1rem 1rem 0;;
+}
+.health-bar .tick{
+  background:white;
+  width:calc(80% / 16);
+  display: inline-block;
+  height: 100%;
+  float: left;
+  border: black solid 1px;
+  border-radius: .2rem;
+  opacity: .6;
+
+}
+.health-bar .yellow {
+  background: yellow;
+    /*border: black solid 1px;*/
+    width: calc(20% / 4);
+    float: right;
+}
+
 .power-circle{
-  background: red;
+  /*background: red;*/
   position: absolute;
   top:calc(70% + 1rem);
   left:calc(50% - 1rem);
