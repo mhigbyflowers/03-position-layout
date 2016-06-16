@@ -55,26 +55,30 @@ font-style: italic;
 
 .health{
 
-/*background: red;*/
+
 position: absolute;
 bottom:1rem;
 left: 1rem;
+width: 30em;
+transform: rotate(-5deg);
 
 }
-.health p{  font-size: 3rem;}
+.health img{display: inline-block;
+width: 30%;}
+.health p span{  font-size: 2rem;}
 
 .health p, .health img{
-  display: inline-block;
+
   float: left;
 }
 .health p{
-  transform: rotate(-5deg);
 
 }
 
 .health-bar{
 
-  width: 20rem;
+overflow: auto;
+width: 20rem;
   height: 3rem;
   -webkit-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
   -moz-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
