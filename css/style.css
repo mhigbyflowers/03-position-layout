@@ -21,8 +21,10 @@ left:calc(50% - 1rem);
   /*background: blue;*/
   color:white;
 position: absolute;
-top:calc(50% + 4em);
-left:calc(50% - 3em);
+top:50%;
+left:50%;
+font-family: 'Rubik Mono One', sans-serif;
+transform:translate(-40%,50%);
 
 }
 .message p{
@@ -34,17 +36,13 @@ font-style: italic;
 }
 
 .guns{
-background: #55a2e0;
-  position: absolute;
-  bottom:1rem;
+
+  position: fixed;
+  bottom:-9rem;
   right:1rem;
   transform: rotate(5deg);
 }
-.guns *{
 
-  border: black 1px solid;
-
-}
 .guns img{
   float: right;
 }
@@ -66,7 +64,7 @@ top:-4.5rem;}
 .health{
 
 
-position: absolute;
+position: fixed;
 bottom:1rem;
 left: 1rem;
 width: 30em;
@@ -116,7 +114,7 @@ padding: 0 1rem 1rem 0;;
 }
 
 .power-circle{
-  /*background: red;*/
+  background: red;
   position: absolute;
   top:calc(70% + 1rem);
   left:calc(50% - 1rem);
