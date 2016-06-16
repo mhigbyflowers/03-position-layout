@@ -4,7 +4,7 @@
 }
 body{margin: 0;
 background: #666;
-background: url(http://cdn.home-designing.com/wp-content/uploads/2009/10/white-and-black-room.jpg);
+/*background: url(http://cdn.home-designing.com/wp-content/uploads/2009/10/white-and-black-room.jpg);*/
 background-size: 100%;}
 .skull {
 /*background: blue;*/
@@ -34,7 +34,7 @@ font-style: italic;
 }
 
 .guns{
-
+background: #55a2e0;
   position: absolute;
   bottom:1rem;
   right:1rem;
@@ -42,17 +42,27 @@ font-style: italic;
 }
 .guns *{
 
-  /*border: black 1px solid;*/
+  border: black 1px solid;
+
 }
+.guns img{
+  float: right;
+}
+
 .powerups , .gun__icon{
-  display: inline-block;
+
   float: left;
-    background: rgba(96,95,95,.45);
+
 }
-.powerups img{ width: 45%;}
+.powerups img{ width: 35%;}
 
-.gun__icon img{width: 55%;}
+.gun__icon img{width: 100%;
+position: relative;
+top:-4.5rem;}
 
+.powerups{
+
+}
 .health{
 
 
@@ -71,7 +81,8 @@ width: 30%;}
 
   float: left;
 }
-.health p{
+
+.health p{ color: white;
 
 }
 
@@ -83,7 +94,7 @@ width: 20rem;
   -webkit-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
   -moz-box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
   box-shadow: 7px 0px 5px -5px rgba(18,203,235,1);
-border-bottom: .1rem gray solid;
+border-bottom: .2rem gray solid;
 padding: 0 1rem 1rem 0;;
 }
 .health-bar .tick{
